@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tuổi</title>
+</head>
+<body>
+<b>Tuổi của em  </b><input id="tuoi em" type="text"><br>
+<button onclick="total()">Tính</button><br>
+<b id="tuoi anh"></b><br>
+<b id="tuoi bo"></b>
+<script>
+    function total(){
+        let a = +document.getElementById('tuoi em').value
+        let b = a + 3
+        let c = b * 6
+        document.getElementById('tuoi anh').innerHTML = 'Tuổi anh là: '+b
+        document.getElementById('tuoi bo').innerHTML = 'Tuổi bố là: '+c
+    }
+</script>
+</body>
+</html>
